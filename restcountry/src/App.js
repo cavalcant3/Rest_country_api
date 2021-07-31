@@ -1,8 +1,12 @@
 import React from "react";
-const url = "https://restcountries.eu";
+import Countries from "./components/Countries";
 
 function App() {
-  return <div>Olá mundão</div>;
+  return (
+    <div>
+      <Countries />
+    </div>
+  );
 }
 
 export default App;
