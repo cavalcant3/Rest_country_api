@@ -17,23 +17,29 @@ const Countries = () => {
     fetchCountryData()
   }, [])
 
+  // requisitando dados da api e mostrando na tela
   return <>
-    {countries.map((country)=>{
+   <section className="grid">
+   {countries.map((country)=>{
       const { numericCode, name, population, region, capital, flag } = country
 
       return <article key={numericCode}>
         <div>
           <img src={flag} alt={name} />
-          <h3>{name}</h3>
-          <h4>Population <span>{population}</span> </h4>
-          <h4>Region: <span>{region}</span></h4>
-          <h4>Capital: <span>{capital}</span></h4>
+            {/* cards */}
+            <div className="details">
+              <h3>{name}</h3>
+              <h4>Population <span>{population}</span> </h4>
+              <h4>Region: <span>{region}</span></h4>
+              <h4>Capital: <span>{capital}</span></h4>
+            </div>
         </div>
           
         </article>
       
 
     })}
+   </section>
   </>;
 };
 
