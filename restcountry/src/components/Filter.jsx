@@ -7,15 +7,17 @@ const Filter = () => {
         <input type="search" name="search" id="search"
          placeholder='Search from a country' />
       </form>
-      <select name="select" id="select" className="select">
-      <option value='Filter by region'>Filter by region</option>
-        <option value='America'>America</option>
-        <option value='Africa'>Africa</option>
-        <option value='Asia'>Asia</option>
-        <option value='Europe'>Europe</option>
-        <option value='Oceania'>Oceania</option>
-      </select>
 
+        <div className="region-filter">
+          <select name="select" id="select" className="select">
+          <option value='Filter by region'>Filter by region</option>
+            <option value='America'>America</option>
+            <option value='Africa'>Africa</option>
+            <option value='Asia'>Asia</option>
+            <option value='Europe'>Europe</option>
+            <option value='Oceania'>Oceania</option>
+          </select>
+        </div>
     </section>
   )
 }
