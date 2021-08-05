@@ -20,6 +20,15 @@ body {
 /* Header */
 .header {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* filter */
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
 }
 
 /* grid */
@@ -27,6 +36,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
+  box-shadow: 0 10px 10px rgba(9, 17, 22, 0.5);
 }
 
 /* cards */
@@ -63,7 +73,11 @@ body {
   }
 }
 @media (min-width: 992px) {
+  body {
+    padding: 50px 100px;
+  }
   .grid {
     grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
   }
 }
