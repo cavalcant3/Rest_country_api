@@ -1,8 +1,10 @@
 import React from 'react'
 
+// aqui criamos aquela parte do filtro 
 const Filter = () => {
   return (
     <section className='filter'>
+      {/* campo de pesquisa */}
       <form className="form-control">
         <input type="search" name="search" id="search"
          placeholder='Search from a country' />
