@@ -11,9 +11,8 @@ const Country = () => {
         `https://restcountries.eu/rest/v2/name/${name}`
       )
       const country = await response.json()
-        setCountry({
-          country
-        });
+       
+        setCountry(country);
       
     }
     
@@ -32,7 +31,8 @@ const Country = () => {
                   numericCode, flag, name,
                   nativeName, population,
                   region, capital, topLevelDomain,
-                  currencies, languages, borders, subregion 
+                  currencies, languages, borders, subregion, 
+                  
                 } = c
             
             return (
@@ -51,10 +51,15 @@ const Country = () => {
                   <div>
                   <h5>Sub Region: <span>{subregion}</span> </h5>
                   <h5>Top Level Domain: <span>{topLevelDomain}</span> </h5>
-                  <h5>Currencies: <span> {currencies} </span> </h5>
-                  <h5>Languages: <span> {languages} </span> </h5>
+                  <h5>Currencies: <span> {currencies[0].name} </span> </h5>
+                  <h5>Languages: <span> {languages[0].name} </span> </h5>
                   </div>
                   
+                </div>
+                <div>
+                  <h3>
+                    Border Countryes: <span>{borders}</span>
+                  </h3>
                 </div>
               </article>
             )
