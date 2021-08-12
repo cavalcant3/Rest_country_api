@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
 
+:root {
+  --dark-bg-color: hsl(207, 26%, 17%);
+  --article-color: hsl(209, 23%, 22%);
+  --text-color: hsl(0, 0%, 100%);
+  --light-mode-text: hsl(200, 15%, 8%);
+  --light-mode-input: hsl(0, 0%, 52%);
+  --light-mode-background: hsl(0, 0%, 98%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,20 +19,68 @@ img {
   max-width: 100%;
 }
 
-body {
-  font-family: "Nunito Sans", sans-serif;
-  /* padding: 40px; */
-  background-color: #202d36;
-  color: white;
+ul {
+  list-style-type: none;
 }
 
-/* Header */
-.header {
+.buttons {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #2b3743;
-  padding: 10px 20px;
+}
+
+.btn {
+  background-color: var(--dark-bg-color);
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid var(--dark-bg-color);
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+.btn:hover {
+  background-color: #fff;
+  color: var(--dark-bg-color);
+}
+.btn-light {
+  background-color: var(--article-color);
+  border: 2px solid var(--article-color);
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  /* padding: 40px; */
+  background-color: var(--dark-bg-color);
+  color: var(--text-color);
+  transition: background-color 0.4s;
+}
+body.light-theme {
+  background-color: #dfdfdf;
+  color: var(--light-mode-text);
+}
+.header,
+.form,
+.countries {
+  padding: 10px 50px;
+}
+/* Header */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-color);
+  background-color: hsl(209, 23%, 22%);
+  box-shadow: 0 5px 10px hsla(200, 15%, 8%, 0.1);
+}
+
+header.light-theme {
+  background-color: var(--light-mode-background);
+  color: var(--light-mode-text);
+}
+.header i {
+  cursor: pointer;
 }
 /* filter */
 .filter {

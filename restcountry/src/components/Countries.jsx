@@ -13,7 +13,7 @@ const Countries = () => {
     const response = await fetch(url)
     const countries = await response.json()
     setCountries(countries)
-    console.log(countries)
+    // console.log(countries)
   }
   // "apresentando" os dados
   useEffect(()=>{
@@ -29,7 +29,13 @@ const Countries = () => {
   return <>
    <section className="grid">
    {countries.map((country)=>{
-      const { numericCode, name, population, region, capital, flag } = country
+      const { numericCode,
+               name, 
+               population, 
+               region, 
+               capital, 
+               flag
+             } = country
           // cards
       return <article key={numericCode}>
         <div>
@@ -40,8 +46,10 @@ const Countries = () => {
               <h4>Population <span>{population}</span> </h4>
               <h4>Region: <span>{region}</span></h4>
               <h4>Capital: <span>{capital}</span></h4>
+              <div className="buttons">
               <Link to={`/countries/${name}`} className='btn' >Learn more</Link>
               <button className="btn" onClick={() => removeCountry(numericCode)} >Remove country</button>
+              </div>
             </div>
         </div>
           
