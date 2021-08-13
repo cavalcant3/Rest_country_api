@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {Link, useParams} from 'react-router-dom'
+import  '../Country.css'
+
 
 const Country = () => {
   const [country, setCountry] = useState([])
