@@ -8,13 +8,15 @@ import Country from "./components/Country";
 function App() {
   return (
     <Router>
-      <Header />
-      {/* definindo que essa área é acessivel no index */}
-      <Route exact path="/">
-        <Filter />
-        <Countries />
-      </Route>
-      <Route path="/countries/:name" children={<Country />}></Route>
+      <>
+        <Header />
+        {/* definindo que essa área é acessivel no index */}
+        <Route exact path="/">
+          <Filter />
+          <Countries />
+        </Route>
+        <Route path="/countries/:name" children={<Country />}></Route>
+      </>
     </Router>
   );
 }

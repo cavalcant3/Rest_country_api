@@ -50,13 +50,12 @@ ul {
 
 body {
   font-family: "Nunito Sans", sans-serif;
-  /* padding: 40px; */
   background-color: var(--dark-bg-color);
   color: var(--text-color);
   transition: background-color 0.4s;
 }
 body.light-theme {
-  background-color: #dfdfdf;
+  background-color: var(--light-mode-background);
   color: var(--light-mode-text);
 }
 .header,
@@ -81,6 +80,60 @@ header.light-theme {
 }
 .header i {
   cursor: pointer;
+}
+/* form component */
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 50px;
+}
+.form input,
+.form select {
+  background-color: var(--article-color);
+  padding: 12px;
+  font-family: inherit;
+  border: none;
+  border-radius: 5px;
+  color: var(--text-color);
+}
+.form input::placeholder {
+  color: var(--text-color);
+}
+.form input.light-theme,
+.form select.light-theme {
+  background-color: var(--light-mode-input);
+}
+/* countries */
+.countries {
+  padding: 0 50px 50px;
+}
+.countries article {
+  transition: background-color 0.4s;
+}
+.countries .flag img {
+  border-radius: 5px 5px 0 0;
+}
+.countries .details {
+  border-radius: 0 0 5px 5px;
+  background-color: var(--article-color);
+  margin: -10px 0 30px;
+  padding: 20px;
+  color: var(--text-color);
+  transition: background-color 0.4s;
+}
+.countries .details.light-theme {
+  background-color: var(--light-mode-background);
+  color: var(--light-mode-text);
+}
+
+.countries .details h4 {
+  margin: 10px 0;
+}
+
+.countries .details h4 span {
+  font-weight: 300;
 }
 /* filter */
 .filter {
