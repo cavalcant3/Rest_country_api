@@ -25,7 +25,7 @@ const Country = () => {
     <>
     <section className="country">
       <Link to="/" className="btn btn-light">
-        <i className="fas fa-arrow-left">Back home</i>
+        <i className="fas fa-arrow-left"> Back home</i>
       </Link>
       
         {country.map((c)=>{
@@ -39,6 +39,7 @@ const Country = () => {
             
             return (
               <article key={numericCode}>
+                <div className="country-inner">
                 <div className="flag">
                   <img src={flag} alt={name}/>
                 </div>
@@ -58,9 +59,18 @@ const Country = () => {
                   </div>
                   
                 </div>
+                </div>
                 <div>
                   <h3>
-                    Border Countryes: <span>{borders}</span>
+                <div className="borders">
+                      Border Countryes: {borders.map((border)=>{
+                     return (
+                      <ul key={border}> 
+                        <li>{border}</li>
+                      </ul>
+                     )
+                    })}
+                </div>
                   </h3>
                 </div>
               </article>
