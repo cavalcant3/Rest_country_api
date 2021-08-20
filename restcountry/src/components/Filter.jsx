@@ -2,6 +2,12 @@ import React from 'react'
 
 // aqui criamos aquela parte do filtro 
 const Filter = () => {
+  const search = document.getElementById('search')
+
+  search.addEventListener('input', (e)=> {
+    const { value } = e.target
+  })
+
   return (
     <section className='filter'>
       {/* campo de pesquisa */}
