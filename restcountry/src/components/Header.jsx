@@ -26,7 +26,7 @@ const Header = () => {
     <>
       <header className="header">
         <div>
-        <h1>Where in the world??</h1>
+        <h1>Where in the world?</h1>
         </div>
         <div>
           
