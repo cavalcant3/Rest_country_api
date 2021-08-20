@@ -4,8 +4,7 @@ const Header = () => {
 
   const changeTheme = () => {
     const moon = document.querySelector('.fa-moon')
-    const header = document.querySelector('.header')
-    
+    const header = document.querySelector('.header')    
     const details = document.querySelectorAll('.details')
     const uls = document.querySelectorAll('ul')
 
