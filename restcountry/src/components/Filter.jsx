@@ -2,10 +2,23 @@ import React from 'react'
 
 // aqui criamos aquela parte do filtro 
 const Filter = () => {
-  const search = document.getElementById('search')
+  window.addEventListener('DOMContentLoaded', () => {
+    const search = document.getElementById('search')
 
   search.addEventListener('input', (e)=> {
     const { value } = e.target
+
+    const countryName = document.querySelectorAll('.country-name')
+
+    countryName.forEach((name)=>{
+      if(name.innerText.toLowerCase().include(value.toLowerCase)) {
+        name.parentElement.parentElement.style.display = 'block'
+      } else { 
+        name.parentElement.parentElement.style.display = 'none'
+
+      }
+    })
+  })
   })
 
   return (

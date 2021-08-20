@@ -37,12 +37,13 @@ const Countries = () => {
                flag
              } = country
           // cards
-      return <article key={numericCode}>
+      return (
+        <article key={numericCode}>
         <div>
           <img src={flag} alt={name} />
             {/* cards-legendas */}
             <div className="details">
-              <h3>{name}</h3>
+              <h3 className="contry-name">Nome: {name}</h3>
               <h4>Population <span>{population}</span> </h4>
               <h4>Region: <span>{region}</span></h4>
               <h4>Capital: <span>{capital}</span></h4>
@@ -54,6 +55,7 @@ const Countries = () => {
         </div>
           
         </article>
+      )
       
 
     })}
