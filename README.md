@@ -29,13 +29,13 @@ O site está disponivel [aqui.](https://rest-country-api-delta.vercel.app)
   
 ## Screenshots
 
-![tela1.png](/imagens/challenge.png)
-![tela1.png](/imagens/challenge.png)
-![tela1.png](/imagens/challenge.png)
-![tela1.png](/imagens/challenge.png)
-![tela1.png](/imagens/challenge.png)
-![tela1.png](/imagens/challenge.png)
-![tela1.png](/imagens/challenge.png)
+![tela1.png](/imagens/challenge1.png)
+![tela1.png](/imagens/challenge2.png)
+![tela1.png](/imagens/challenge3.png)
+![tela1.png](/imagens/challenge4.png)
+![tela1.png](/imagens/challenge5.png)
+![tela1.png](/imagens/challenge6.png)
+![tela1.png](/imagens/challenge7.png)
 ![video.gif](/imagens/video.gif)
   
 ## Execute localmente:
