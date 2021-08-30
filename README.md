@@ -22,7 +22,7 @@ O site está disponivel [aqui.](https://rest-country-api-delta.vercel.app)
     
 ## Tecnologias usadas:
 
-**Client:** ReactJS
+**Client:** ReactJS.
 
 **Server:** Somente [Api externa](https://restcountries.eu/)
 
